@@ -1,1 +1,91 @@
 /*  your css code here. If applicable */
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        width: 100%;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+        font-size: 28px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        padding: 12px 15px;
+        margin-bottom: 15px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: border-color 0.3s ease;
+      }
+
+      input[type="text"]:focus,
+      input[type="password"]:focus {
+        outline: none;
+        border-color: #667eea;
+      }
+
+      .checkbox-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      input[type="checkbox"] {
+        margin-right: 8px;
+        transform: scale(1.2);
+      }
+
+      label {
+        color: #555;
+        cursor: pointer;
+      }
+
+      input[type="submit"],
+      button {
+        padding: 12px 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        margin-bottom: 10px;
+      }
+
+      input[type="submit"]:hover,
+      button:hover {
+        transform: translateY(-2px);
+      }
+
+      #existing {
+        background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        display: none;
+      }
+
+      #existing.visible {
+        display: block;
+      }
